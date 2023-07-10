@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+@font-face {
+   font-family: 'Archangelsk';
+   src: url('../fonts/Archangelsk.woff2') format('woff2'),
+      url('../fonts/Archangelsk.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+
 :root {
    --accent-color: #F8F200;
    --text-color: #52BEDC;
    --background-color: #000;
+   --archangelsk-font: 'Archangelsk';
 }
 
 * {
@@ -19,7 +30,8 @@ a {
    transition: .4s;
 }
 
-ul, li {
+ul,
+li {
    list-style: none;
 }
 
@@ -48,17 +60,74 @@ body {
    font: 18px/34px 'Roboto', Arial, Helvetica, sans-serif;
    color: #000;
 }
-.header-section{
+
+/* Header */
+.header-section {
    padding-top: 20px;
    position: relative;
 }
-.header-top{
+
+.header-top {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
-.header-top__list{
+
+.header-top__list {
    display: flex;
    justify-content: space-between;
    gap: 40px;
+}
+.header-top__link svg path{
+   transition: all .4s;
+}
+.header-top__link svg path:hover {
+   fill: var(--accent-color);
+}
+
+.swiper {
+   max-width: 100%;
+   max-height: 100vh;
+}
+
+.header-slider {
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   z-index: -1;
+}
+
+.header-info {
+   overflow: hidden;
+   position: absolute;
+   top: 546%;
+   left: 51%;
+   max-width: 642px;
+   padding: 70px;
+   background-color: var(--accent-color);
+   clip-path: polygon(0 60.00px, 60.00px 0, 100% 0, 100% calc(100% - 60.00px), calc(100% - 60.00px) 100%, 0 100%);
+}
+
+.header-info__title {
+   margin-bottom: 39px;
+   font-size: 62px;
+   line-height: 63px;
+   font-weight: 400;
+   font-family: var(--archangelsk-font);
+   color: var(--background-color);
+}
+
+.header-info__link {
+   max-width: 272px;
+   padding: 19px 50px;
+   font-size: 24px;
+   line-height: 40px;
+   font-weight: 700;
+   color: var(--accent-color);
+   background-color: var(--background-color);
+}
+
+.header-info__link:hover {
+   color: var(--background-color);
+   background-color: var(--text-color);
 }
