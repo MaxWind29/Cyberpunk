@@ -62,15 +62,18 @@ body {
 }
 
 /* Header */
-.header-section {
-   padding-top: 20px;
+.header {
    position: relative;
 }
 
 .header-top {
+   position: absolute;
    display: flex;
-   justify-content: space-between;
    align-items: center;
+   column-gap: 75vh;
+   top: 0%;
+   left: 15%;
+   padding-top: 20px;
 }
 
 .header-top__list {
@@ -78,9 +81,11 @@ body {
    justify-content: space-between;
    gap: 40px;
 }
-.header-top__link svg path{
+
+.header-top__link svg path {
    transition: all .4s;
 }
+
 .header-top__link svg path:hover {
    fill: var(--accent-color);
 }
@@ -91,17 +96,16 @@ body {
 }
 
 .header-slider {
-   position: absolute;
    top: 0%;
    left: 0%;
    z-index: -1;
 }
 
+
 .header-info {
-   overflow: hidden;
    position: absolute;
-   top: 546%;
-   left: 51%;
+   top: 60%;
+   left: 51%; 
    max-width: 642px;
    padding: 70px;
    background-color: var(--accent-color);
