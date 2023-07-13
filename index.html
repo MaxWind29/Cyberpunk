@@ -157,15 +157,19 @@
             <div class="form-wrap">
                <h2 class="form__title title">Играй и выигрывай!</h2>
                <p class="form__text">
-                  Играй в Cyberpunk 2077 и получи возможность выиграть консоль Xbox Series X или Sony PlayStation 5! Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)
+                  Играй в <strong class="form__text_strong">Cyberpunk 2077</strong> и получи возможность выиграть консоль <strong class="form__text_strong">Xbox Series X </strong>или <strong class="form__text_strong">Sony PlayStation 5!</strong> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)
                </p>
                <form class="form-box" action="#">
                   <input class="form-box__name" type="text" placeholder="Как тебя зовут?">
                   <input class="form-box__email" type="email" placeholder="Твой e-mail">
-                  <input class="form-box__file" type="file" placeholder="Прикрепить скриншот .png/ .jpg/ .pdf">
-                  <button class="form-box__button" type="submit">Отправить</button>
+                  <label class="form-box__lable-upload">
+                     <input class="form-box__file" type="file" name="file-upload" accept=".jpg, .png, .pdf">
+                     <span class=""></span>
+                  </label>
+                  <button class="form-box__button button" type="submit">Отправить</button>
                   <label class="form-box__label">
-                     <input class="form-box__check" type="checkbox">
+                     <input class="form-box__check-real" type="checkbox" name="personal-data">
+                     <span class="form-box__check-custom"></span>
                      Согласен на обработку персональных данных
                   </label>
                </form>
