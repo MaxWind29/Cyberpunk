@@ -435,7 +435,125 @@ body {
    color: var(--accent-color);
    background-color: var(--background-color);
 }
+
 .adertiment-content__link:hover {
    color: var(--background-color);
    background-color: var(--text-color);
+}
+
+/* Store */
+.store {
+   padding-top: 70px;
+   background-image: url('../img/store/background.jpeg');
+   background-position: left top;
+   background-repeat: no-repeat;
+   background-size: 50% 100%;
+   background-color: var(--background-color);
+}
+
+.store-wrapper {
+   margin-left: 52%;
+}
+
+.store__title {
+   color: #fff;
+   margin-bottom: 30px;
+}
+
+.store__subtitle {
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 28px;
+   color: var(--text-color);
+   margin-bottom: 15px;
+}
+
+.store-list__item {
+   position: relative;
+   margin-bottom: 26px;
+   padding-left: 40px;
+   line-height: 21px;
+   color: #fff;
+}
+
+.store-list__item:nth-child(1)::after {
+   content: "";
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 27px;
+   height: 27px;
+   background-image: url('../img/icon/disk.svg');
+   background-repeat: no-repeat;
+}
+
+.store-list__item:nth-child(2)::after {
+   content: "";
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 27px;
+   height: 27px;
+   background-image: url('../img/icon/cod.svg');
+   background-repeat: no-repeat;
+}
+
+.store-list__item:nth-child(3)::after {
+   content: "";
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 27px;
+   height: 27px;
+   background-image: url('../img/icon/picture.svg');
+   background-repeat: no-repeat;
+}
+
+.store-list__item:nth-child(3) {
+   margin-bottom: 70px;
+}
+
+.store-platform__list {
+   max-width: 320px;
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 82px;
+   row-gap: 49px;
+   padding-bottom: 70px;
+}
+
+.store-platform__subtitle {
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 28px;
+   margin-bottom: 25px;
+   color: var(--text-color);
+}
+
+/* Footer */
+.footer{
+   padding-top: 13px;
+}
+.footer-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.footer-left,
+.footer-right{
+   display: flex;
+   gap: 32px;
+}
+.footer-right__link{
+   line-height: 21px;
+}
+.footer-copy{
+   padding: 13px 0;
+   background-color: var(--background-color);
+}
+.fooyer-copy__link{
+   font-size: 12px;
+   line-height: 14px;
+   text-align: center;
+   color: #fff;
 }
