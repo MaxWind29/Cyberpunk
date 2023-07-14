@@ -86,10 +86,9 @@ body {
 }
 
 .header-top {
-   position: absolute;
    display: flex;
    align-items: center;
-   column-gap: 75vh;
+   position: absolute;
    top: 0%;
    left: 15%;
    padding-top: 20px;
@@ -99,6 +98,7 @@ body {
    display: flex;
    justify-content: space-between;
    gap: 40px;
+   margin-left: 605px;
 }
 
 .header-top__link svg path {
@@ -110,7 +110,7 @@ body {
 }
 
 .swiper {
-   max-width: 100%;
+   width: 100vw;
    max-height: 100vh;
 }
 
@@ -120,11 +120,15 @@ body {
    z-index: -1;
 }
 
+.header-slider__item img{
+   width: 100%;
+}
+
 
 .header-info {
    position: absolute;
    right: 10%;
-   bottom: 0%;
+   bottom: -1%;
    transform: translate(0%, -3%);
    max-width: 642px;
    padding: 70px;
