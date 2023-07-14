@@ -123,8 +123,9 @@ body {
 
 .header-info {
    position: absolute;
-   top: 60%;
-   left: 51%;
+   right: 10%;
+   bottom: 0%;
+   transform: translate(0%, -3%);
    max-width: 642px;
    padding: 70px;
    background-color: var(--accent-color);
