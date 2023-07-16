@@ -1,8 +1,8 @@
 const swiper = new Swiper('.swiper', {
-   autoplay: {
+   // autoplay: {
       
-   },
-   loop: true,
-   speed: 3500,
-   effect: "fade",
+   // },
+   // loop: true,
+   // speed: 3500,
+   // effect: "fade",
 });
