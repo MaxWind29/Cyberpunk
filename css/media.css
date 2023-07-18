@@ -9,7 +9,7 @@
 
    .header-slider__item img {
       overflow: hidden;
-      width: 1024px;
+      max-width: 1024px;
       min-height: 100vh;
       object-fit: cover;
       object-position: 50%;
@@ -144,5 +144,139 @@
 }
 
 @media only screen and (max-width: 320px) {
+   .header-top {
+      flex-wrap: wrap;
+   }
 
+   .header-top__list {
+      margin-left: 0;
+      gap: 24px;
+   }
+
+   .header-info {
+      max-width: 320px;
+      padding: 30px 13px;
+      right: 0%;
+      bottom: -6%;
+      transform: translate(0%, 0%);
+      clip-path: polygon(0 50px, 50px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%);
+   }
+
+   .header-info__title {
+      margin-bottom: 19px;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 31px;
+      text-align: center;
+   }
+
+   .header-info__link {
+      max-width: 244px;
+      margin: 0 auto;
+      font-size: 20px;
+      text-align: center;
+   }
+
+   .header-slider__item img {
+      max-width: 320px;
+   }
+
+   .about {
+      padding-top: 130px;
+   }
+
+   .about-wrap {
+      position: relative;
+      left: -30px;
+      width: 123%;
+      overflow: hidden;
+   }
+
+   .about__title {
+      max-width: 296px;
+      margin-bottom: 19px;
+      font-size: 29px;
+      line-height: 31px;
+   }
+
+   .about__text {
+      max-width: 296px;
+      font-size: 16px;
+   }
+
+   .about-wrap__left {
+      flex-direction: column;
+      row-gap: 32px;
+   }
+
+   .about-wrap__img {
+      min-height: 196px;
+      object-fit: fill;
+   }
+
+   .about-wrap__right {
+      height: 429px;
+   }
+
+   .form {
+      background-image: url('../img/form/background_3.png');
+      background-position: 45% 12%;
+   }
+
+   .form__title::before {
+      background-image: url('../img/form/decor_sale2.svg');
+      left: -20px;
+   }
+
+   .form__title {
+      padding-top: 300px;
+      margin-bottom: 22px;
+      font-size: 28px;
+      line-height: 31px;
+   }
+
+   .form__text {
+      font-size: 16px;
+      margin-bottom: 70px;
+   }
+
+   .form-box input {
+      max-width: 270px;
+   }
+
+   .form-box__name,
+   .form-box__email {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 19px;
+   }
+
+   .form-box__lable-upload {
+      padding: 51px 45px 50px;
+   }
+
+   .form-box__file-descr {
+      margin-bottom: 0;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19px;
+   }
+
+   .form-box__file-format {
+      display: none;
+   }
+   .form-box__button{
+      max-width: 182px;
+      font-size: 16px;
+      line-height: 19px;
+   }
+   .form-box__label{
+      font-size: 11px;
+   }
+   .form::after{
+      top: -15px;
+   }
+   .form::before {
+      left: -10px;
+  }
 }
